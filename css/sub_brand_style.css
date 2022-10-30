@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'GyeonggiBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ChosunCentennial';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Polar_Star';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_09@1.0/Polar_Star.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.nanumgothic * {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+@font-face {
+    font-family: 'MapoFlowerIsland';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'GyeonggiBatang';
+    font-size: 14px;
+    line-height: 24px;
+    color: #707070;
+}
+
+/*header*/
+#header_wrap {
+    overflow: hidden;
+    height: 97px;
+}
+
+.header1 {
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header1 h1 {
+   
+    padding: 10px 0 0 30px;
+}
+
+.gnb {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.gnb .gnb_menu {
+    float: left;
+    padding: 35px 20px;
+}
+
+.gnb .gnb_menu a {
+    display: block;
+    font-size: 16px;
+}
+
+.gnb li a:hover {
+    color: #668146;
+    font-weight: bold;
+}
+/*section*/
+#section{
+   
+    margin: 0 auto;
+}
+/*section1*/
+.section1{
+    margin: 80px 0 250px;
+    text-align: center;
+}
+.section1 .img_logo{
+   
+}
+.section1_text{
+    padding: 100px 0;
+    line-height: 35px;
+    font-size: 30px;
+}
+.section1_text strong{
+    font-size: 32px;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #607355;
+}
+/*section2*/
+.section2{
+   
+    text-align: center;
+}
+.section2_text1 strong{
+    font-size: 93px;
+    font-weight: 100;
+    color: #707070;
+    
+}
+.section2_text1{
+    font-family: 'MapoFlowerIsland';
+    font-size: 30px;
+    color: #9C9C9C;
+    line-height: 60px;
+}
+.section2_img_box{
+    background: url(../git_img/sub_brand/section2/section2_t_bg.png) no-repeat top;
+    height: 894px;
+    margin-bottom: 100px;
+}
+.section2_img_box img{
+    float: left;
+    margin-right: 50px;
+    padding-top: 375px;
+}
+.section2_img1{
+    padding-left: 440px;
+}
+/*section3*/
+#section3{
+    width: 1723px;
+    margin: 0 auto;
+    height: 2200px;
+}
+/*box1*/
+.box1{
+    margin-top: 100px;
+}
+.box1_left{
+    float: left;
+    width: 576px;
+    height: 283px;
+    padding-left: 286px;
+}
+.box1_text strong{
+    font-size: 21px;
+}
+.box1_text{
+    font-size: 18px;
+    line-height: 30px;
+}
+.box1_text2{
+    font-size: 15px;
+    color: #919191;
+    padding-top: 25px;
+}
+.box1_right{
+    float: right;
+    width: 550px;
+    padding-right: 286px;
+}
+/*box2*/
+.box2{
+    margin-top: 100px;
+}
+.box2_left{
+    float: left;
+    width: 459px;
+    height: 590px;
+    padding-left: 286px;
+    margin-top: 150px;
+}
+.box2_text strong{
+    font-size: 21px;
+}
+.box2_text{
+    font-size: 18px;
+    line-height: 30px;
+}
+.box2_text2{
+    font-size: 15px;
+    color: #919191;
+    padding-top: 25px;
+   
+}
+.box2_right{
+    float: right;
+    width: 550px;
+    padding-right: 286px;
+    margin-top: 100px;
+    text-align: right;
+}
+/*box3*/
+.box3{
+    margin-top: 100px;
+}
+.box3_left{
+    float: left;
+    width: 459px;
+    height: 590px;
+    padding-left: 286px;
+    margin-top: 170px;
+}
+.box3_text strong{
+    font-size: 21px;
+}
+.box3_text{
+    font-size: 18px;
+    line-height: 30px;
+}
+.box3_text2{
+    font-size: 15px;
+    color: #919191;
+    padding-top: 25px;
+   
+}
+.box3_right{
+    float: right;
+    width: 550px;
+    padding-right: 286px;
+    margin-top: 100px;
+    text-align: right;
+}
+/*footer*/
+#footer_wrap{
+    background-color: #F2F6F1;
+    height: 369px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 100;
+}
+.footer{
+    padding-left: 300px;
+}
+.footer_logo{
+    padding: 50px 0 10px;
+}
+.footer_sns_ikon{
+    padding-bottom: 50px;
+}
+.footer_text li{
+    line-height: 30px;
+}
+.footer_text li span{
+    padding-left: 30px;
+}

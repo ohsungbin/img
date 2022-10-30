@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'GyeonggiBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ChosunCentennial';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Polar_Star';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_09@1.0/Polar_Star.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.nanumgothic * {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+@font-face {
+    font-family: 'MapoFlowerIsland';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'GyeonggiBatang';
+    font-size: 14px;
+    line-height: 24px;
+    color: #707070;
+}
+
+/*header*/
+#header_wrap {
+    overflow: hidden;
+    height: 97px;
+}
+
+.header1 {
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header1 h1 {
+   
+    padding: 10px 0 0 30px;
+}
+
+.gnb {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.gnb .gnb_menu {
+    float: left;
+    padding: 35px 20px;
+}
+
+.gnb .gnb_menu a {
+    display: block;
+    font-size: 16px;
+}
+
+.gnb li a:hover {
+    color: #668146;
+    font-weight: bold;
+}
+/*login*/
+#login_wrap{
+    background: url(../images/sub_login/login_bg.png) no-repeat top;
+    width: 100%;
+    height: 790px;
+    margin-bottom: 150px;
+}
+.login{
+    width: 1098px;
+    height: 790px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.login_title h1{
+    font-family: 'GyeonggiBatang';
+    font-size: 73px;
+    padding-top: 120px;
+    font-weight: 1;
+}
+.login_box{
+    width: 1099px;
+    height: 488px;
+    background-color: #fff;
+    margin-top: 60px;
+}
+.login_box_l{
+    width: 549px;
+    height: 488px;
+    float: left;
+}
+.check_box {
+    float: left;
+    font-size: 9px;
+    margin-top: 9px;
+    
+}
+.lose_box{
+    width: 481px;
+    height: 147px;
+    margin: 0 auto;
+    margin-top: 75px;
+    text-align: left;
+}
+.lose{
+    width: 481px;
+    height: 48px;
+}
+.lose2{
+    width: 481px;
+    height: 48px;
+    margin-top: 20px;
+}
+.lose_left{
+    width: 296px;
+    height: 50px;
+    float: left;
+    font-size: 13px;
+    line-height: 25px;
+    color: #949393;
+}
+.lose_left h1{
+    color: #474747;
+    font-size: 18px;
+    font-weight: 500;
+}
+.lose_right{
+    float: right;
+    width: 172px;
+    height: 42px;
+    background-color: #EBE2C9;
+    text-align: center;
+}
+.lose_right a{
+    display: block;
+    margin-top: 10px;
+    color: #707070;
+    font-size: 16px;
+}
+
+.login_box_r{
+    width: 549px;
+    height: 488px;
+    float: right;
+}
+.title{
+    text-align: left;
+    margin: 70px 0 15px 36px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.order_check_box{
+    width: 475px;
+    height: 100px;
+    margin: 0 auto;
+}
+.order_check{
+    width: 313px;
+    height: 100px;
+    float: left;
+}
+.order_check_1 input, .order_check_2 input{
+    width: 301px;
+    height: 40px;
+    font-size: 15px;
+    color: #6B6B6B;
+    border: 1px solid #E1E1E1;
+    padding-left: 10px;
+}
+.order_check_1 input{
+    margin-bottom: 17px;
+}
+.order_check_click{
+    width: 145px;
+    height: 100px;
+    float: right;
+    background-color: #B7A284;
+}
+.order_check_click p{
+    padding: 36px 10px;
+}
+.order_check_click p a{
+    padding: 31px 3px;
+    font-size: 27px;
+    color: #fff;
+}
+.text_r{
+    text-align: left;
+    margin: 70px 0 15px 36px;
+    font-size: 15px;
+}
+
+/*footer*/
+#footer_wrap{
+    background-color: #F2F6F1;
+    height: 369px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 100;
+}
+.footer{
+    padding-left: 300px;
+}
+.footer_logo{
+    padding: 50px 0 10px;
+}
+.footer_sns_ikon{
+    padding-bottom: 50px;
+}
+.footer_text li{
+    line-height: 30px;
+}
+.footer_text li span{
+    padding-left: 30px;
+}

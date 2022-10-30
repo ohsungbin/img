@@ -1,0 +1,350 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'GyeonggiBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ChosunCentennial';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Polar_Star';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_09@1.0/Polar_Star.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.nanumgothic * {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+@font-face {
+    font-family: 'MapoFlowerIsland';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'GyeonggiBatang';
+    font-size: 14px;
+    line-height: 24px;
+    color: #707070;
+}
+
+/*header*/
+#header_wrap {
+    overflow: hidden;
+    height: 97px;
+}
+
+.header1 {
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header1 h1 {
+   
+    padding: 10px 0 0 30px;
+}
+
+.gnb {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.gnb .gnb_menu {
+    float: left;
+    padding: 35px 20px;
+}
+
+.gnb .gnb_menu a {
+    display: block;
+    font-size: 16px;
+}
+
+.gnb li a:hover {
+    color: #668146;
+    font-weight: bold;
+}
+/*section1*/
+#section1_wrap{
+    width: 1320px;
+    margin: 80px auto 135px;
+    overflow: hidden;
+}
+.section1_text{
+    float: left;
+    width: 539px;
+    height: 354px;
+}
+.section1_img{
+    float: right;
+    width: 761px;
+    height: 354px;
+    text-align: center;
+}
+.section1_img_text{
+    font-size: 20px;
+    line-height: 33px;
+    margin-top: 20px;
+}
+.section1_img_text strong{
+    font-size: 26px;
+    border-bottom: 3px solid #9AB886;
+}
+/*perfume*/
+#perfume_wrap{
+    width: 1320px;
+    margin: 0 auto 100px;
+    overflow: hidden;
+}
+.perfume_title{
+    width: 960px;
+    height: 132px;
+    line-height: 60px;
+    margin-left: 59px;
+}
+.perfume_title h1{
+    font-family: 'ChosunCentennial';
+    font-size: 70px;
+}
+.perfume_title p{
+    font-size: 25px;
+    margin-left: 100px;
+}
+.perfume_title span{
+    font-family: 'Polar_Star';
+}
+.perfume_title strong{
+    font-size: 35px;
+    font-weight: 100;
+}
+.manoa h1, .saintveran h1, .hinoki h1{
+    width: 288px;
+    height: 410px;
+}
+.perfume_img_box{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.manoa{
+    margin-left: 160px;
+}
+.perfume_name{
+    font-size: 15px;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: right;
+    width: 288px;
+    padding: 26px 0;
+}
+.price{
+    color: #989898;
+}
+.price span{
+    color: #C2C2C2;
+    font-size: 13px;
+    text-decoration: line-through;
+    padding-right: 10px;
+}
+.perfume_text_box1{
+    font-family: 'Polar_Star';
+    font-size: 20px;
+}
+.perfume_text_padding{
+    padding-left: 90px;
+}
+.perfume_text_box2{
+    padding: 26px 0;
+    font-size: 14px;
+    text-align: center;
+}
+/*handbody*/
+#handbody_wrap{
+    width: 1320px;
+    margin: 0 auto 100px;
+    overflow: hidden;
+}
+.handbody_title{
+    width: 1200px;
+    height: 132px;
+    line-height: 60px;
+    margin-left: 59px;
+    text-align: right;
+}
+.handbody_title h1{
+    font-family: 'ChosunCentennial';
+    font-size: 70px;
+}
+.handbody_title p{
+    width: 1040px;
+    font-size: 25px;
+    margin-left: 100px;
+}
+.handbody_title span{
+    font-family: 'Polar_Star';
+}
+.handbody_title strong{
+    font-size: 35px;
+    font-weight: 100;
+}
+.gaiacflower h1, .forrest h1, .forrest_body h1{
+    width: 318px;
+    height: 450px;
+    
+}
+.handbody_img_box{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.forrest_body{
+   
+}
+.handbody_name{
+    font-size: 15px;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: left;
+    width: 318px;
+    padding: 26px 0;
+}
+.price{
+    color: #989898;
+}
+.price span{
+    color: #C2C2C2;
+    font-size: 13px;
+    text-decoration: line-through;
+    padding-right: 10px;
+}
+.handbody_text_box1{
+    font-size: 14px;
+}
+.handbody_text_padding{
+    padding-top: 24px;
+}
+.handbody_text_box2{
+    padding: 26px 0;
+    font-size: 14px;
+    text-align: left;
+}
+/*soap*/
+#soap_wrap{
+    width: 1320px;
+    margin: 0 auto 100px;
+    overflow: hidden;
+}
+.soap_title{
+    width: 960px;
+    height: 132px;
+    line-height: 60px;
+    margin-left: 59px;
+}
+.soap_title h1{
+    font-family: 'ChosunCentennial';
+    font-size: 70px;
+}
+.soap_title p{
+    font-size: 25px;
+    margin-left: 100px;
+}
+.soap_title span{
+    font-family: 'Polar_Star';
+}
+.soap_title strong{
+    font-size: 35px;
+    font-weight: 100;
+}
+.cleansing h1, .set h1{
+    width: 323px;
+    height: 337px;
+}
+.shampoo_img2{
+    width: 323px;
+    height: 337px;
+}
+.soap_img_box{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.cleansing{
+    margin-left: 160px;
+}
+.soap_name{
+    font-size: 15px;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: right;
+    padding: 0 0 26px;
+}
+.price{
+    color: #989898;
+}
+.price span{
+    color: #C2C2C2;
+    font-size: 13px;
+    text-decoration: line-through;
+    padding-right: 10px;
+}
+.soap_text_box1{
+    font-size: 14px;
+    text-align: right;
+}
+.soap_text_padding{
+    padding-left: 90px;
+}
+.soap_text_box2{
+    padding: 26px 0;
+    font-size: 14px;
+    text-align: right;
+}
+/*footer*/
+#footer_wrap{
+    background-color: #F2F6F1;
+    height: 369px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 100;
+}
+.footer{
+    padding-left: 300px;
+}
+.footer_logo{
+    padding: 50px 0 10px;
+}
+.footer_sns_ikon{
+    padding-bottom: 50px;
+}
+.footer_text li{
+    line-height: 30px;
+}
+.footer_text li span{
+    padding-left: 30px;
+}

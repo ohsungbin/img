@@ -1,0 +1,279 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'GyeonggiBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ChosunCentennial';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Polar_Star';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_09@1.0/Polar_Star.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.nanumgothic * {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+@font-face {
+    font-family: 'MapoFlowerIsland';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'GyeonggiBatang';
+    font-size: 14px;
+    line-height: 24px;
+    color: #707070;
+}
+
+/*header*/
+#header_wrap {
+    overflow: hidden;
+    height: 97px;
+}
+
+.header1 {
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header1 h1 {
+   
+    padding: 10px 0 0 30px;
+}
+
+.gnb {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.gnb .gnb_menu {
+    float: left;
+    padding: 35px 20px;
+}
+
+.gnb .gnb_menu a {
+    display: block;
+    font-size: 16px;
+}
+
+.gnb li a:hover {
+    color: #668146;
+    font-weight: bold;
+}
+/*section*/
+#section {
+    background: url(../images/sub_service/section1/section1_bg.png) no-repeat top;
+    height: 274px;
+    margin-bottom: 100px;
+}
+/*notice*/
+#notice_wrap{
+    margin: 0 auto 130px;
+    text-align: center;
+}
+.notice{
+    background-color: #F9F3EC;
+    height: 517px;
+}
+.notice_t{
+    font-family: 'ChosunCentennial';
+    font-size: 40px;
+    padding: 35px 0 55px;
+    line-height: 30px;
+}
+.notice_t span{
+    font-size: 15px;
+}
+.notice_banner_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+.notice_banner_box li{
+    padding-right: 26px;
+}
+.notice_banner_box li a:hover{
+    opacity: 0.8;
+}
+/*q&a*/
+#qa_wrap{
+    margin: 0 auto 130px;
+}
+.qa{
+    background: url(../images/sub_service/q&a/q&a_bg.png) no-repeat top;
+    background-size: cover;
+}
+.qa_t{
+    font-family: 'ChosunCentennial';
+    font-size: 40px;
+    padding: 35px 0 55px;
+    line-height: 30px;
+    text-align: center;
+}
+.qa_t span{
+    font-size: 15px;
+}
+.text_info{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.font_10 img, .answer img{
+  width: 25px;
+  height: 25px;
+}
+/*question*/
+#question_wrap{
+    margin: 0 auto 130px;
+    text-align: center; 
+}
+.question{
+   background: url(../images/sub_service/question/question_bg.png)no-repeat top;
+   height: 996px;
+}
+.question_t{
+    font-family: 'ChosunCentennial';
+    font-size: 40px;
+    padding: 35px 0 55px;
+    line-height: 30px;
+}
+.question_t span{
+    font-size: 15px;
+}
+.question_box{
+    margin: 0 auto;
+    width: 1143px;
+    height: 645px;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.question_box1{
+    width: 1012px;
+    height: 554px;
+    margin: 0 auto;
+}
+input{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 0px;
+}
+.question_top {
+    padding-top: 30px;
+}
+.question_top input{
+    width: 465px;
+    height: 81px;
+    background-color: #EEEEEE;
+    font-weight: 900;
+    padding-left: 20px;
+}
+.name, .email{
+    width: 506px;
+    height: 115px;
+    float: left;
+}
+.number, .title{
+    width: 506px;
+    height: 115px;
+    float: right;
+}
+.question_tetx textarea{
+    width: 969px;
+    height: 197px;
+    background-color: #EEEEEE;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 15px 0 0 20px;
+}
+.btn p{
+    display: inline-block;
+    width: 172px;
+    height: 45px;
+    background-color: #CFDDC6;
+    margin: 15px 0 0 -821px;
+    border-radius: 15px;
+}
+.btn p a{
+    display: block;
+    font-size: 22px;
+    padding: 10px;
+    color: #707070;
+}
+.text1{
+    float: left;
+    border-bottom: 2px solid #183E0C;
+    margin: 8px 0 0 36px;                   
+}
+.radio_box{
+   margin: 10px 0 0 150px;
+}
+.btn2{
+    margin: -47px 0 0 773px;
+}
+.btn2 p{
+    display: inline-block;
+    width: 223px;
+    height: 57px;
+    background-color: #CFDDC6;
+    border-radius: 15px;
+}
+.btn2 p a{
+    display: block;
+    font-size: 22px;
+    padding: 16px;
+    color: #707070;
+}
+
+/*footer*/
+#footer_wrap{
+    background-color: #F2F6F1;
+    height: 369px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 100;
+}
+.footer{
+    padding-left: 300px;
+}
+.footer_logo{
+    padding: 50px 0 10px;
+}
+.footer_sns_ikon{
+    padding-bottom: 50px;
+}
+.footer_text li{
+    line-height: 30px;
+}
+.footer_text li span{
+    padding-left: 30px;
+}

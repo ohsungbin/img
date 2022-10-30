@@ -1,0 +1,344 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'GyeonggiBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Polar_Star';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_09@1.0/Polar_Star.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{margin: 0;padding: 0;}
+ul,ol{list-style: none;}
+a{color: #000; text-decoration: none;}
+body{
+    font-family: 'GyeonggiBatang';
+    font-size: 14px;
+    line-height: 24px;
+    color: #707070;
+}
+/*best*/
+#best_wrap{
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.best_title{
+    background: url(../images/main/3_best/best_title_bk.png) no-repeat center;
+    height: 194px;
+    text-align: center;
+}
+.text_change2{
+    font-size: 45px;
+    padding: 50px 0;
+    color: #BA806A;
+    font-family: 'ChosunCentennial';
+}
+.best_sub_title{
+    font-size: 25px;
+    border-top: 2px solid #DAB69E;
+    border-bottom: 2px solid #DAB69E;
+    width: 482px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.best_main_wrpa{
+    margin-top: 70px;
+    background-color: #9A8C7A;
+    width: 884px;
+    height: 667px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 40px;
+    margin-top: 70px;
+}
+.best_main_l{
+    float: left;
+    width: 396px;
+    height: 605px;
+    margin-left: 40px;
+    background-image: url(../images/main/3_best/best_1/best_left_img.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    position: absolute;
+    }
+.texture_img{
+    position: relative;
+    bottom: 30px;
+    left: 190px;
+}
+.best_text1{
+    font-size: 24px;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-top: 200px;
+}
+.best_text2{
+    font-size: 96px;
+    margin-top: 30px;
+    font-family: 'Polar_Star';
+}
+.best_text3{
+    margin-top: 70px;
+}
+.best_main_r{
+    float: right;
+    width: 380px;
+    padding-right: 40px;
+}
+
+.bodylotion_name{
+    padding-top: 10px;
+}
+.hashtage{
+    overflow: hidden;
+    padding-top: 80px;
+}
+.hashtage li{  
+    display: inline-block;
+    width: 115px; 
+    border-radius: 20px; 
+    margin-left: 6px;
+    background-color: #F8F3EB;
+}
+.hashtage li a{
+    display: block;
+    font-size: 15px;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #707070;
+    padding: 5px 0;
+}
+.best_right_img{
+    padding-bottom: 10px;
+}
+.bodylotion_name{
+    color: #fff;
+    font-size: 22px;
+    padding-bottom: 24px;
+}
+.price{
+    color: #fff;
+    padding-bottom: 20px;
+}
+.button{
+    background-color: #F2E5DB;
+    width: 101px;
+    height: 28px;
+    margin-left: 139px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+/*best2*/
+#best2_wrap{
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.best2_title{
+    background: url(../images/main/3_best/best_title_bk.png) no-repeat center;
+    height: 194px;
+    text-align: center;
+}
+.text_change2{
+    font-size: 45px;
+    padding: 50px 0;
+    color: #BA806A;
+    font-family: 'ChosunCentennial';
+}
+.best_sub_title{
+    font-size: 25px;
+    border-top: 2px solid #DAB69E;
+    border-bottom: 2px solid #DAB69E;
+    width: 482px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.best2_main_wrpa{
+    margin-top: 70px;
+    background-color: #929F8B;
+    width: 884px;
+    height: 667px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 40px;
+    margin-top: 70px;
+}
+.best2_main_l{
+    color: #fff;
+    float: left;
+    width: 396px;
+    height: 605px;
+    margin-left: 40px;
+    background-image: url(../images/main/3_best/best_2/best_left_img.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    position: absolute;
+    }
+.best2_text1{
+    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-top: 140px;
+}
+.best2_text2{
+    font-size: 96px;
+    margin-top: 30px;
+    font-family: 'Polar_Star';
+}
+.best2_text3{
+    font-size: 17px;
+    margin-top: 190px;
+}
+.best2_main_r{
+    float: right;
+    width: 380px;
+    padding-right: 40px;
+}
+
+.perfume_name{
+    padding-top: 10px;
+}
+.hashtage2{
+    overflow: hidden;
+    padding-top: 80px;
+}
+.hashtage2 li{  
+    display: inline-block;
+    width: 115px; 
+    border-radius: 20px; 
+    margin-left: 6px;
+    background-color: #F2F2F1;
+}
+.hashtage2 li a{
+    display: block;
+    font-size: 15px;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #707070;
+    padding: 5px 0;
+}
+.best2_right_img{
+    padding-bottom: 10px;
+}
+.perfume_name{
+    color: #fff;
+    font-size: 22px;
+    padding-bottom: 24px;
+}
+.price2{
+    color: #fff;
+    padding-bottom: 20px;
+}
+.button2{
+    background-color: #ECF2DB;
+    width: 101px;
+    height: 28px;
+    margin-left: 139px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+/*best3*/
+#best3_wrap{
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.best3_title{
+    background: url(../images/main/3_best/best_title_bk.png) no-repeat center;
+    height: 194px;
+    text-align: center;
+}
+.text_change2{
+    font-size: 45px;
+    padding: 50px 0;
+    color: #BA806A;
+    font-family: 'ChosunCentennial';
+}
+.best_sub_title{
+    font-size: 25px;
+    border-top: 2px solid #DAB69E;
+    border-bottom: 2px solid #DAB69E;
+    width: 482px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.best3_main_wrpa{
+    margin-top: 70px;
+    background-color: #D1CBB8;
+    width: 884px;
+    height: 667px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 40px;
+    margin-top: 70px;
+}
+.best3_main_l{
+    float: left;
+    width: 396px;
+    height: 605px;
+    margin-left: 40px;
+    background-image: url(../images/main/3_best/best_3/best_left_img.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    position: absolute;
+    }
+.best3_text1{
+    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-top: 153px;
+}
+.best3_text2{
+    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    padding-top: 10px;
+}
+.best3_text3{
+    font-size: 96px;
+    margin-top: 60px;
+    font-family: 'Polar_Star';
+}
+.best3_text4{
+    font-size: 17px;
+    margin-top: 120px;
+}
+.best3_main_r{
+    float: right;
+    width: 380px;
+    padding-right: 40px;
+}
+
+.shampoo_name{
+    padding-top: 10px;
+}
+.hashtage3{
+    overflow: hidden;
+    padding-top: 80px;
+}
+.hashtage3 li{  
+    display: inline-block;
+    width: 115px; 
+    border-radius: 20px; 
+    margin-left: 6px;
+    background-color: #FFFFD4;
+}
+.hashtage3 li a{
+    display: block;
+    font-size: 15px;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #707070;
+    padding: 5px 0;
+}
+.best3_right_img{
+    padding-bottom: 10px;
+}
+.shampoo_name{
+    color: #fff;
+    font-size: 22px;
+    padding-bottom: 24px;
+}
+.price3{
+    color: #fff;
+    padding-bottom: 20px;
+}
+.button3{
+    background-color: #FFFCEB;
+    width: 101px;
+    height: 28px;
+    margin-left: 139px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}

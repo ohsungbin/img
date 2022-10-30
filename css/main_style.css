@@ -1,0 +1,2386 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'GyeonggiBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ChosunCentennial';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Polar_Star';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_09@1.0/Polar_Star.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.nanumgothic * {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'GyeonggiBatang';
+    font-size: 14px;
+    line-height: 24px;
+    color: #707070;
+}
+/*햄버거버튼*/
+.header{
+    width: 100%;
+    height: 50px;
+}
+.menu_btn{
+    text-align: right;
+}
+.menu_bg{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top:0;
+    display: none;
+}
+.sidebar_menu{
+    display: none;
+    width: 80%;
+    height: 100%;
+    background: url(../images/mobile_menu_img.png) no-repeat center bottom;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: -100%;
+    z-index: 999;
+}
+.close_btn{
+    width:  25px;
+    height: 25px;
+    margin: 40px 0 0 30px;
+}
+.close_btn > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.menu_wrap{
+    list-style: none;
+    padding: 23px 0 0 30px;   
+}
+.menu_wrap li{
+    padding: 20px 0;
+}
+.menu_wrap li a{
+    color: #707070;
+    font-size: 16px;
+    text-decoration: none;
+}
+.menu_wrap li a:hover{
+    color: #668146;
+    font-weight: bold;
+}
+
+/*햄버거_tablet*/
+@media (min-width:700px) and (max-width:1320px){
+    .header{
+        width: 100%;
+        height: 50px;
+    }
+    .menu_btn{
+        text-align: right;
+    }
+    .menu_bg{
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.7);
+        position: absolute;
+        top:0;
+        display: none;
+    }
+    .sidebar_menu{
+        display: none;
+        width: 80%;
+        height: 100%;
+        background: url(../images/mobile_menu_img.png) no-repeat center bottom;
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: -100%;
+        z-index: 999;
+    }
+    .close_btn{
+        width:  25px;
+        height: 25px;
+        margin: 40px 0 0 30px;
+    }
+    .close_btn > a{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .menu_wrap{
+        list-style: none;
+        padding: 23px 0 0 30px;   
+    }
+    .menu_wrap li{
+        padding: 20px 0;
+    }
+    .menu_wrap li a{
+        color: #707070;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    .menu_wrap li a:hover{
+        color: #668146;
+        font-weight: bold;
+    }
+}
+/*header_web*/
+#header_wrap {
+    overflow: hidden;
+    height: 97px;
+}
+
+.header1 {
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header1 h1 {
+   
+    padding: 10px 0 0 30px;
+}
+
+.gnb {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.gnb .gnb_menu {
+    float: left;
+    padding: 35px 20px;
+}
+
+.gnb .gnb_menu a {
+    display: block;
+    font-size: 16px;
+}
+
+.gnb li a:hover {
+    color: #668146;
+    font-weight: bold;
+}
+
+/*header_tablet*/
+@media (min-width:700px) and (max-width:1320px) {
+    .header1 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .header1 h1 {
+        padding: 0;
+        margin-top: 8px;
+        text-align: center;
+    }
+
+    .gnb_menu {
+        display: none;
+    }
+
+    .header_menu {
+        margin: 40px 40px 0 0;
+    }
+}
+
+/*header_mobile*/
+@media (max-width:699px) {
+    .header1 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .header1 h1 {
+        padding: 0;
+        margin-top: 8px;
+        text-align: center;
+    }
+
+    .gnb_menu {
+        display: none;
+    }
+
+    .header_menu {
+        margin: 40px 40px 0 0;
+    }
+}
+
+/*video*/
+video{
+	display: block;
+	width: 100%;
+    margin-bottom: 70px;
+}
+
+/*container_web*/
+#container_wrap{
+    width: 1320px;
+    margin: 0 auto;
+}
+.container_title{
+    width: 100%;
+    background: url(../git_img/main/2_brand_story/brand_story_title_bk.png) no-repeat center;
+    box-sizing: border-box;
+    padding: 30px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.text_change1{
+ font-family: 'Nanum Gothic', sans-serif;
+ color: #9A9A9A;
+ padding-bottom: 15px;
+}
+.title{
+    font-size: 23px;
+    color: #616161;
+}
+.container_main{
+    display: flex;
+    flex-wrap: wrap;
+    background: url(../git_img/main/2_brand_story/brand_story_ikon2.png) no-repeat bottom 20px right 320px;
+    text-align: center;
+}
+.container_center img{
+    width: 100%;
+}
+.container_left{
+    width: 406px;
+    height: 439px; 
+    background: url(../git_img/main/2_brand_story/brand_story_ikon1.png) no-repeat top 10px right 10px;
+    padding-top: 95px;
+}
+.container_left .title1{
+    font-size: 25px;
+    font-weight: bold;
+}
+.container_left .text1{
+    font-size: 15px;
+    padding-top: 30px;
+}
+.container_center{
+    width: 533px;
+    height: 389px;
+    padding-top: 95px;
+   
+}
+.container_right{
+    width: 381px;
+    height: 337px;
+    background: url(../git_img/main/2_brand_story/brand_story_ikon3.png) no-repeat top 45px right 50px;
+    padding-top: 95px;
+}
+.container_right .title2{
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 80px;
+}
+.container_right .text2{
+    font-size: 15px;
+    padding: 50px 0;
+}
+.brand_story_button{
+    width: 200px;
+    height: 36px;
+    padding-top: 10px;
+    margin-left: 100px;
+    background-color: #E0ECDC;
+}
+.brand_story_button a{
+    padding: 10px 20px;
+}
+.brand_story_button a:hover{
+    color: #668146;
+    font-weight: bold;
+}
+
+/*container_tablet*/
+@media (min-width:700px) and (max-width:1320px) {
+    #container_wrap{
+        width: 100%;
+    }
+    .container_title{
+        background: url(../git_img/main/mobile/2_brand_story/brand_story_title.png) no-repeat top;
+        padding: 13px 0;
+        margin: 10px auto;
+    }
+    .text_change1{
+        display: none;
+    }
+    .title{
+        font-size: 14px;
+    }    
+    .container_main{
+        background-image: none;
+    }
+    .container_center img{
+        width: 100%;
+    }
+    .container_left img{
+        display: none;
+    }
+    .container_left{
+        width: 100%;
+        background: url(../git_img/main/mobile/2_brand_story/brand_story_img111.png) no-repeat top;
+        padding-top: 30px;
+        margin: 0 auto;
+        height: 300px;
+    }
+    .container_left .title1{
+        font-size: 20px;
+    }
+    .text1{
+        font-size: 14px;
+    }
+    .title1, .text1{
+        padding-top: 190px;
+    }
+    .container_center img{
+        width: 100%;
+        display: none;
+    }
+    .container_center{
+        width: 100%;
+        background: url(../git_img/main/mobile/2_brand_story/brand_story_img2\ \(2\).png) no-repeat top;
+        padding-top: 0px;
+        margin: 0 auto;
+        height: 210px;
+    }
+    .container_right{
+       background-image: none;
+       margin: 0 auto;
+       padding-top: 0;
+       height: 200px;
+    }
+    .container_right .title2{
+        font-size: 20px;
+        padding-top: 0;
+    }
+    .container_right .text2{
+        font-size: 14px;
+        padding: 20px 0;
+    }
+    .brand_story_button{
+        margin: 0 auto;
+    }
+}
+/*container_mobile*/
+@media (max-width:699px) {
+    #container_wrap{
+        width: 100%;
+    }
+    .container_title{
+        background: url(../git_img/main/mobile/2_brand_story/brand_story_title.png) no-repeat top;
+        padding: 13px 0;
+        margin: 10px auto;
+    }
+    .text_change1{
+        display: none;
+    }
+    .title{
+        font-size: 14px;
+    }    
+    .container_main{
+        background-image: none;
+    }
+    .container_center img{
+        width: 100%;
+    }
+    .container_left img{
+        display: none;
+    }
+    .container_left{
+        background: url(../git_img/main/mobile/2_brand_story/brand_story_img111.png) no-repeat top;
+        padding-top: 30px;
+        margin: 0 auto;
+        height: 300px;
+    }
+    .container_left .title1{
+        font-size: 20px;
+    }
+    .text1{
+        font-size: 14px;
+    }
+    .title1, .text1{
+        padding-top: 190px;
+    }
+    .container_center img{
+        display: none;
+    }
+    .container_center{
+        background: url(../git_img/main/mobile/2_brand_story/brand_story_img2\ \(2\).png) no-repeat top;
+        padding-top: 0px;
+        margin: 0 auto;
+        height: 210px;
+    }
+    .container_right{
+       background-image: none;
+       margin: 0 auto;
+       padding-top: 0;
+       height: 200px;
+    }
+    .container_right .title2{
+        font-size: 20px;
+        padding-top: 0;
+    }
+    .container_right .text2{
+        font-size: 14px;
+        padding: 20px 0;
+    }
+    .brand_story_button{
+        margin: 0 auto;
+    }
+}
+
+/*best_web*/
+#best_wrap{
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.best_title{
+    background: url(../git_img/main/3_best/best_title_bk.png) no-repeat center;
+    height: 194px;
+    text-align: center;
+}
+.text_change2{
+    font-size: 45px;
+    padding: 50px 0;
+    color: #BA806A;
+    font-family: 'ChosunCentennial';
+}
+.best_sub_title{
+    font-size: 25px;
+    border-top: 2px solid #DAB69E;
+    border-bottom: 2px solid #DAB69E;
+    width: 482px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.best_main_wrpa{
+    margin-top: 70px;
+    background-color: #9A8C7A;
+    width: 884px;
+    height: 667px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 40px;
+    margin-top: 70px;
+}
+.best_main_l{
+    color: #707070;
+    float: left;
+    width: 396px;
+    height: 605px;
+    margin-left: 40px;
+    background-image: url(../git_img/main/3_best/best_1/best_left_img.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    position: absolute;
+    }
+.texture_img{
+    position: relative;
+    bottom: 30px;
+    left: 190px;
+}
+.best_text1{
+    font-size: 24px;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-top: 200px;
+}
+.best_text2{
+    font-size: 96px;
+    margin-top: 30px;
+    font-family: 'Polar_Star';
+}
+.best_text3{
+    margin-top: 70px;
+}
+.best_main_r{
+    float: right;
+    width: 380px;
+    padding-right: 40px;
+}
+
+.bodylotion_name{
+    padding-top: 10px;
+}
+.hashtage{
+    overflow: hidden;
+    padding-top: 80px;
+}
+.hashtage li{  
+    display: inline-block;
+    width: 115px; 
+    border-radius: 20px; 
+    margin-left: 6px;
+    background-color: #F8F3EB;
+}
+.hashtage li a{
+    display: block;
+    font-size: 15px;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #707070;
+    padding: 5px 0;
+}
+.best_right_img{
+    padding-bottom: 10px;
+}
+.bodylotion_name{
+    color: #fff;
+    font-size: 22px;
+    padding-bottom: 24px;
+}
+.price{
+    color: #fff;
+    padding-bottom: 20px;
+}
+.button{
+    background-color: #F2E5DB;
+    width: 101px;
+    height: 28px;
+    margin-left: 139px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    font-size: 14px;
+}
+
+/*best_tablet*/
+@media (min-width:700px) and (max-width:1320px) {
+    #best{
+        margin-bottom: 60px;
+    }
+    #best_wrap{
+        margin-bottom: 0px;
+    }
+    .best_title {
+        background: none;
+        height: 143px;
+    }
+    .best_title .text_change2 {
+        font-size: 28px;
+        padding: 50px 0 20px;
+    }
+
+    .best_title .best_sub_title {
+        font-size: 15px;
+        width: 285px;
+    }
+    .best_main_wrpa {
+        width: 272px;
+        height: 820px;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+
+    .best_main_l {
+        float: none;
+        width: 272px;
+        height: 332px;
+        margin: 0 auto;
+        background: url(../git_img/main/mobile/3_best/best_1/best1_left_img.png) no-repeat center;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .texture_img {
+        display: none;
+    }
+
+    .best_text1 {
+        font-size: 1px;
+        margin-top: 60px;
+    }
+
+    .best_text2 {
+        font-size: 56px;
+    }
+
+    .best_text3 {
+        font-size: 11px;
+    }
+
+    .best_main_r {
+        background-color: #9A8C7A;
+        float: none;
+        width: 272px;
+        height: 442px;
+        padding: 20px 0 0 0px;
+        margin-top: 350px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .best_main_r img {
+        width: 242px;
+        height: 240px;
+    }
+
+    .hashtage {
+        padding-top: 20px;
+    }
+
+    .hashtage li {
+        width: 78px;
+        margin-left: 5px;
+    }
+
+    .hashtage li a {
+        font-size: 9px;
+        padding: 0;
+    }
+
+    .bodylotion_name {
+        font-size: 22px;
+    }
+
+    .button {
+        color: #707070;
+        width: 101px;
+        height: 28px;
+        margin-left: 85px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        font-size: 14px;
+    }
+}
+
+/*best_mobile*/
+@media (max-width:699px) {
+    #best{
+        margin-bottom: 60px;
+    }
+    #best_wrap{
+        margin-bottom: 0px;
+    }
+    .best_title {
+        background: none;
+        height: 143px;
+    }
+    .best_title .text_change2 {
+        font-size: 28px;
+        padding: 50px 0 20px;
+    }
+
+    .best_title .best_sub_title {
+        font-size: 15px;
+        width: 285px;
+    }
+    .best_main_wrpa {
+        width: 272px;
+        height: 820px;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+
+    .best_main_l {
+        float: none;
+        width: 272px;
+        height: 332px;
+        margin: 0 auto;
+        background: url(../git_img/main/mobile/3_best/best_1/best1_left_img.png) no-repeat center;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .texture_img {
+        display: none;
+    }
+
+    .best_text1 {
+        font-size: 1px;
+        margin-top: 60px;
+    }
+
+    .best_text2 {
+        font-size: 56px;
+    }
+
+    .best_text3 {
+        font-size: 11px;
+    }
+
+    .best_main_r {
+        background-color: #9A8C7A;
+        float: none;
+        width: 272px;
+        height: 442px;
+        padding: 20px 0 0 0px;
+        margin-top: 350px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .best_main_r img {
+        width: 242px;
+        height: 240px;
+    }
+
+    .hashtage {
+        padding-top: 20px;
+    }
+
+    .hashtage li {
+        width: 78px;
+        margin-left: 5px;
+    }
+
+    .hashtage li a {
+        font-size: 9px;
+        padding: 0;
+    }
+
+    .bodylotion_name {
+        font-size: 22px;
+    }
+
+    .button {
+        color: #707070;
+        width: 101px;
+        height: 28px;
+        margin-left: 85px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        font-size: 14px;
+    }
+}
+
+/*best2_web*/
+#best2_wrap{
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.best2_title{
+    background: url(../git_img/main/3_best/best_title_bk.png) no-repeat center;
+    height: 194px;
+    text-align: center;
+}
+.text_change2{
+    font-size: 45px;
+    padding: 50px 0;
+    color: #BA806A;
+    font-family: 'ChosunCentennial';
+}
+.best_sub_title{
+    font-size: 25px;
+    border-top: 2px solid #DAB69E;
+    border-bottom: 2px solid #DAB69E;
+    width: 482px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.best2_main_wrpa{
+    margin-top: 70px;
+    background-color: #929F8B;
+    width: 884px;
+    height: 667px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 40px;
+    margin-top: 70px;
+}
+.best2_main_l{
+    color: #fff;
+    float: left;
+    width: 396px;
+    height: 605px;
+    margin-left: 40px;
+    background-image: url(../git_img/main/3_best/best_2/best_left_img.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    position: absolute;
+    }
+.best2_text1{
+    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-top: 140px;
+}
+.best2_text2{
+    font-size: 96px;
+    margin-top: 30px;
+    font-family: 'Polar_Star';
+}
+.best2_text3{
+    font-size: 17px;
+    margin-top: 190px;
+}
+.best2_main_r{
+    float: right;
+    width: 380px;
+    padding-right: 40px;
+}
+
+.perfume_name{
+    padding-top: 10px;
+}
+.hashtage2{
+    overflow: hidden;
+    padding-top: 80px;
+}
+.hashtage2 li{  
+    display: inline-block;
+    width: 115px; 
+    border-radius: 20px; 
+    margin-left: 6px;
+    background-color: #F2F2F1;
+}
+.hashtage2 li a{
+    display: block;
+    font-size: 15px;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #707070;
+    padding: 5px 0;
+}
+.best2_right_img{
+    padding-bottom: 10px;
+}
+.perfume_name{
+    color: #fff;
+    font-size: 22px;
+    padding-bottom: 24px;
+}
+.price2{
+    color: #fff;
+    padding-bottom: 20px;
+}
+.button2{
+    font-size: 14px;
+    background-color: #ECF2DB;
+    width: 101px;
+    height: 28px;
+    margin-left: 139px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+/*best2_tablet*/
+@media (min-width:700px) and (max-width:1320px) {
+    #best2_wrap{
+        margin-bottom: 0px;
+    }
+    .best2_main_wrpa {
+        width: 272px;
+        height: 820px;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+    .best2_main_l {
+        float: none;
+        width: 272px;
+        height: 332px;
+        margin: 0 auto;
+        background: url(../git_img/main/mobile/3_best/best_2/best2_left_img.png) no-repeat center;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+    .best2_text1 {
+        font-size: 11px;
+        margin-top: 70px;
+    }
+
+    .best2_text2 {
+        font-size: 56px;
+    }
+
+    .best2_text3 {
+        font-size: 11px;
+        margin-top: 80px;
+    }
+
+    .best2_main_r {
+        background-color: #929F8B;
+        float: none;
+        width: 272px;
+        height: 442px;
+        padding: 20px 0 0 0px;
+        margin-top: 350px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .best2_main_r img {
+        width: 242px;
+        height: 240px;
+    }
+
+    .hashtage2 {
+        padding-top: 20px;
+    }
+
+    .hashtage2 li {
+        width: 78px;
+        margin-left: 5px;
+    }
+
+    .hashtage2 li a {
+        font-size: 9px;
+        padding: 0;
+    }
+
+    .perfume_name {
+        font-size: 22px;
+    }
+
+    .button2 {
+        color: #707070;
+        font-size: 14px;
+        width: 101px;
+        height: 28px;
+        margin-left: 85px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/*best2_mobile*/
+@media (max-width:699px) {
+    #best2_wrap{
+        margin-bottom: 0px;
+    }
+    .best2_main_wrpa {
+        width: 272px;
+        height: 820px;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+    .best2_main_l {
+        float: none;
+        width: 272px;
+        height: 332px;
+        margin: 0 auto;
+        background: url(../git_img/main/mobile/3_best/best_2/best2_left_img.png) no-repeat center;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+    .best2_text1 {
+        font-size: 11px;
+        margin-top: 70px;
+    }
+
+    .best2_text2 {
+        font-size: 56px;
+    }
+
+    .best2_text3 {
+        font-size: 11px;
+        margin-top: 80px;
+    }
+
+    .best2_main_r {
+        background-color: #929F8B;
+        float: none;
+        width: 272px;
+        height: 442px;
+        padding: 20px 0 0 0px;
+        margin-top: 350px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .best2_main_r img {
+        width: 242px;
+        height: 240px;
+    }
+
+    .hashtage2 {
+        padding-top: 20px;
+    }
+
+    .hashtage2 li {
+        width: 78px;
+        margin-left: 5px;
+    }
+
+    .hashtage2 li a {
+        font-size: 9px;
+        padding: 0;
+    }
+
+    .perfume_name {
+        font-size: 22px;
+    }
+
+    .button2 {
+        color: #707070;
+        font-size: 14px;
+        width: 101px;
+        height: 28px;
+        margin-left: 85px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+}
+/*best3_web*/
+#best3_wrap{
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.best3_title{
+    background: url(../git_img/main/3_best/best_title_bk.png) no-repeat center;
+    height: 194px;
+    text-align: center;
+}
+.text_change2{
+    font-size: 45px;
+    padding: 50px 0;
+    color: #BA806A;
+    font-family: 'ChosunCentennial';
+}
+.best_sub_title{
+    font-size: 25px;
+    border-top: 2px solid #DAB69E;
+    border-bottom: 2px solid #DAB69E;
+    width: 482px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.best3_main_wrpa{
+    margin-top: 70px;
+    background-color: #D1CBB8;
+    width: 884px;
+    height: 667px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 40px;
+    margin-top: 70px;
+}
+.best3_main_l{
+    color: #707070;
+    float: left;
+    width: 396px;
+    height: 605px;
+    margin-left: 40px;
+    background-image: url(../git_img/main/3_best/best_3/best_left_img.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    position: absolute;
+    }
+.best3_text1{
+    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-top: 153px;
+}
+.best3_text2{
+    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    padding-top: 10px;
+}
+.best3_text3{
+    font-size: 96px;
+    margin-top: 60px;
+    font-family: 'Polar_Star';
+}
+.best3_text4{
+    font-size: 17px;
+    margin-top: 120px;
+}
+.best3_main_r{
+    float: right;
+    width: 380px;
+    padding-right: 40px;
+}
+
+.shampoo_name{
+    padding-top: 10px;
+}
+.hashtage3{
+    overflow: hidden;
+    padding-top: 80px;
+}
+.hashtage3 li{  
+    display: inline-block;
+    width: 115px; 
+    border-radius: 20px; 
+    margin-left: 6px;
+    background-color: #FFFFD4;
+}
+.hashtage3 li a{
+    display: block;
+    font-size: 15px;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #707070;
+    padding: 5px 0;
+}
+.best3_right_img{
+    padding-bottom: 10px;
+}
+.shampoo_name{
+    color: #fff;
+    font-size: 22px;
+    padding-bottom: 24px;
+}
+.price3{
+    color: #fff;
+    padding-bottom: 20px;
+}
+.button3{
+    background-color: #FFFCEB;
+    width: 101px;
+    height: 28px;
+    margin-left: 139px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    font-size: 14px;
+}
+
+/*best3_tablet*/
+@media (min-width:700px) and (max-width:1320px) {
+    #best3_wrap{
+        margin-bottom: 0px;
+    }
+    .best3_main_wrpa {
+        width: 272px;
+        height: 820px;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+    .best3_main_l {
+        float: none;
+        width: 272px;
+        height: 332px;
+        margin: 0 auto;
+        background: url(../git_img/main/mobile/3_best/best_3/best3_left_img.png) no-repeat center;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+    .best3_text1 {
+        font-size: 11px;
+        margin-top: 50px;
+        padding-top: 0px;
+    }
+    .best3_text2 {
+        font-size: 11px;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .best3_text3 {
+        font-size: 56px;
+        margin-top: 30px;
+    }
+
+    .best3_text4 {
+        font-size: 11px;
+        margin-top: 40px;
+    }
+
+    .best3_main_r {
+        background-color: #D1CBB8;
+        float: none;
+        width: 272px;
+        height: 442px;
+        padding: 20px 0 0 0px;
+        margin-top: 350px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .best3_main_r img {
+        width: 242px;
+        height: 240px;
+    }
+
+    .hashtage3 {
+        padding-top: 20px;
+    }
+
+    .hashtage3 li {
+        width: 78px;
+        margin-left: 5px;
+    }
+
+    .hashtage3 li a {
+        font-size: 9px;
+        padding: 0;
+    }
+
+    .shampoo_name {
+        font-size: 22px;
+    }
+
+    .button3 {
+        color: #707070;
+        width: 101px;
+        height: 28px;
+        margin-left: 85px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/*best3_mobile*/
+@media (max-width:699px) {
+    #best3_wrap{
+        margin-bottom: 0px;
+    }
+    .best3_main_wrpa {
+        width: 272px;
+        height: 820px;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+    .best3_main_l {
+        float: none;
+        width: 272px;
+        height: 332px;
+        margin: 0 auto;
+        background: url(../git_img/main/mobile/3_best/best_3/best3_left_img.png) no-repeat center;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+    .best3_text1 {
+        font-size: 11px;
+        margin-top: 50px;
+        padding-top: 0px;
+    }
+    .best3_text2 {
+        font-size: 11px;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .best3_text3 {
+        font-size: 56px;
+        margin-top: 30px;
+    }
+
+    .best3_text4 {
+        font-size: 11px;
+        margin-top: 40px;
+    }
+
+    .best3_main_r {
+        background-color: #D1CBB8;
+        float: none;
+        width: 272px;
+        height: 442px;
+        padding: 20px 0 0 0px;
+        margin-top: 350px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .best3_main_r img {
+        width: 242px;
+        height: 240px;
+    }
+
+    .hashtage3 {
+        padding-top: 20px;
+    }
+
+    .hashtage3 li {
+        width: 78px;
+        margin-left: 5px;
+    }
+
+    .hashtage3 li a {
+        font-size: 9px;
+        padding: 0;
+    }
+
+    .shampoo_name {
+        font-size: 22px;
+    }
+
+    .button3 {
+        color: #707070;
+        width: 101px;
+        height: 28px;
+        margin-left: 85px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/*promotion_web*/
+#promotion_wrap{
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.promotion_title{
+    background: url(../git_img/main/3_best/best_title_bk.png) no-repeat center;
+    height: 194px;
+    text-align: center;
+}
+.promotion_sub_title{
+    font-size: 25px;
+    border-top: 2px solid #DAB69E;
+    border-bottom: 2px solid #DAB69E;
+    width: 397px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.promotion_main_wrap{
+    text-align: center;
+    width: 1320px;
+    height: 624px;
+    background: url(../git_img/main/4_promotion/promotion_bk.png) no-repeat top;
+    margin: 70px auto;
+    padding-top: 60px;
+}
+.promotion_main_t_box{
+    background-color: #fff;
+    width: 438px;
+    border-radius: 50px;
+    border: 1px solid;
+    margin: 0 auto;
+    line-height: 30px;
+    padding-top: 8px;
+}
+.promotion_text{
+    font-size: 22px;
+}
+.promotion_date{
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #AFAFAF;
+}
+.promotion_l{
+    float: left;
+    width: 630px;
+    height: 500px;
+    background: url(../git_img/main/4_promotion/promotion_product_bk1.png) no-repeat left 85px top 20px;
+    position: absolute;
+}
+.promotion_l img{
+    position: relative;
+    top: 120px;
+    right: 94px;
+}
+.promotion_l img:hover{
+    transition: all 0.5s;
+    transform: scale(1.1);
+}
+.promotion_text_box_l {
+    position: relative;
+    bottom: 189px;
+    left: 170px;
+    color: #fff;
+}
+.shampoo{
+    font-size: 28px;
+}
+.promotion_price{
+    font-size: 18px;
+    color: #D9D9D9;
+    padding: 10px 0;
+    text-decoration: line-through;
+}
+.promotion_sale_price{
+    font-size: 22px;
+    padding-bottom: 22px;
+}
+.promotion_button1{
+    font-size: 16px;
+    border-radius: 100px;
+    background-color: #BA806A;
+    width: 156px;
+    margin: 0 auto;
+    padding: 10px 0;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+.promotion_button1 a{
+    color: #fff;
+}
+.promotion_button1:hover{
+    background-color: #462C22;
+}
+.promotion_button2:hover{
+    background-color: #462C22;
+}
+.promotion_r{
+    float: right;
+    width: 630px;
+    height: 500px;
+    background: url(../git_img/main/4_promotion/promotion_product_bk2.png) no-repeat  bottom 132px right 100px;
+}
+.promotion_r img{ 
+    position: relative;
+    top: 100px;
+    right: 214px;
+}
+.promotion_r img:hover{
+    transition: all 0.5s;
+    transform: scale(1.1);
+}
+.promotion_text_box_r{
+    position: relative;
+    bottom: 211px;
+    left: 75px;
+    color: #fff;
+}
+.handcream{
+    font-size: 28px;
+}
+.promotion_price_r{
+    font-size: 18px;
+    color: #D9D9D9;
+    padding: 10px 0;
+    text-decoration: line-through;
+}
+.promotion_sale_price_r{
+    font-size: 22px;
+    padding-bottom: 22px;
+}
+.promotion_button2{
+    font-size: 16px;
+    border-radius: 100px;
+    background-color: #BA806A;
+    width: 156px;
+    margin: 0 auto;
+    padding: 10px 0;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+.promotion_button2 a{
+    color: #fff;
+}
+
+/*promotion_tablet*/
+@media (min-width:700px) and (max-width:1320px) {
+    #promotion_wrap{
+        margin-bottom: 43px;
+    }
+    .promotion_title{
+        background-image: none;
+        height: 143px;
+    }
+    .promotion_title .text_change2{
+        font-size: 28px;
+        padding: 25px 0;
+    }
+    .promotion_sub_title{
+        font-size: 15px;
+        width: 210px;
+        padding: 10px 0;
+    }
+    .promotion_main_wrap{
+        width: 390px;
+        height: 566px;
+        background: url(../git_img/main/mobile/4_promotion/promotion_m_bg.png) no-repeat top;
+        margin: 25px auto;
+        padding-top: 28px;
+        position: relative;
+    }
+    .promotion_main_t_box{
+        width: 278px;
+        line-height: 25px;
+    }
+    .promotion_text{
+        font-size: 15px;
+    }
+    .promotion_date{
+        font-size: 13px;
+    }
+    .promotion_l{
+        float: none;
+        width: 303px;
+        height: 199px;
+        background: url(../git_img/main/mobile/4_promotion/promotion_m_bg1.png) no-repeat top;
+        position: absolute;
+        top: 100px;
+        left: 40px;
+    }
+    .promotion_l img{
+        display: none;
+    }
+    .promotion_text_box_l {
+        position: relative;
+        top: 26px;
+        left: 72px;
+    }
+    .shampoo{
+        font-size: 14px;
+    }
+    .promotion_price{
+        font-size: 10px;
+        padding: 3px 0;
+    }
+    .promotion_sale_price{
+        font-size: 11px;
+        padding-bottom: 5px;
+    }
+    .promotion_button1{
+        font-size: 12px;
+        width: 80px;
+        padding: 4px 0;
+    }
+    .promotion_r{
+        float: none;
+        width: 303px;
+        height: 222px;
+        background: url(../git_img/main/mobile/4_promotion/promotion_m_bg2.png) no-repeat top;
+        position: absolute;
+        top: 316px;
+        left: 40px;
+    }
+    .promotion_r img{ 
+       display: none;
+    }
+    .promotion_text_box_r{
+        position: relative;
+        top: 45px;
+        left: 67px;
+    }
+    .handcream{
+        font-size: 14px;
+    }
+    .promotion_price_r{
+        font-size: 10px;
+        padding: 3px 0;
+    }
+    .promotion_sale_price_r{
+        font-size: 11px;
+        padding-bottom: 5px;
+    }
+    .promotion_button2{
+        font-size: 12px;
+        width: 80px;
+        margin: 0 auto;
+        padding: 4px 0;
+    }
+}
+
+/*promotion_mobile*/
+@media (max-width:699px) {
+    #promotion_wrap{
+        margin-bottom: 43px;
+    }
+    .promotion_title{
+        background-image: none;
+        height: 143px;
+    }
+    .promotion_title .text_change2{
+        font-size: 28px;
+        padding: 25px 0;
+    }
+    .promotion_sub_title{
+        font-size: 15px;
+        width: 210px;
+        padding: 10px 0;
+    }
+    .promotion_main_wrap{
+        width: 390px;
+        height: 566px;
+        background: url(../git_img/main/mobile/4_promotion/promotion_m_bg.png) no-repeat top;
+        margin: 25px auto;
+        padding-top: 28px;
+        position: relative;
+    }
+    .promotion_main_t_box{
+        width: 278px;
+        line-height: 25px;
+    }
+    .promotion_text{
+        font-size: 15px;
+    }
+    .promotion_date{
+        font-size: 13px;
+    }
+    .promotion_l{
+        float: none;
+        width: 303px;
+        height: 199px;
+        background: url(../git_img/main/mobile/4_promotion/promotion_m_bg1.png) no-repeat top;
+        position: absolute;
+        top: 100px;
+        left: 40px;
+    }
+    .promotion_l img{
+        display: none;
+    }
+    .promotion_text_box_l {
+        position: relative;
+        top: 26px;
+        left: 72px;
+    }
+    .shampoo{
+        font-size: 14px;
+    }
+    .promotion_price{
+        font-size: 10px;
+        padding: 3px 0;
+    }
+    .promotion_sale_price{
+        font-size: 11px;
+        padding-bottom: 5px;
+    }
+    .promotion_button1{
+        font-size: 12px;
+        width: 80px;
+        padding: 4px 0;
+    }
+    .promotion_r{
+        float: none;
+        width: 303px;
+        height: 222px;
+        background: url(../git_img/main/mobile/4_promotion/promotion_m_bg2.png) no-repeat top;
+        position: absolute;
+        top: 316px;
+        left: 40px;
+    }
+    .promotion_r img{ 
+       display: none;
+    }
+    .promotion_text_box_r{
+        position: relative;
+        top: 45px;
+        left: 67px;
+    }
+    .handcream{
+        font-size: 14px;
+    }
+    .promotion_price_r{
+        font-size: 10px;
+        padding: 3px 0;
+    }
+    .promotion_sale_price_r{
+        font-size: 11px;
+        padding-bottom: 5px;
+    }
+    .promotion_button2{
+        font-size: 12px;
+        width: 80px;
+        margin: 0 auto;
+        padding: 4px 0;
+    }
+}
+
+/*event_web*/
+#event_wrap{
+    width: 100%;
+    height: 700px;
+    background: url(../git_img/main/5_event/event_bk.png) no-repeat center 200px;
+    margin-bottom: 170px;
+}
+.event_box{
+     margin: 0 auto;
+     width: 1320px;
+}
+.event_left_box{
+    text-align: center;
+    float: left;
+    width: 600px;
+    margin: -35px 0 0 96px;
+}
+.sub_title{
+    font-family: 'ChosunCentennial';
+    font-size: 47px;
+}
+.event{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 95px;
+    padding: 50px 0 80px;
+}
+.event_date{
+    color: #9E9E9E;
+    font-size: 22px;
+}
+.title_wrap{
+    width: 478px;
+    display: inline-block;
+}
+.event_ikon_wrap{
+    width: 532px;
+    margin: 87px auto 0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.event_ikon_box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.ikon_box1, .ikon_box2, .ikon_box3{
+    width: 150px;
+    height: 260px;
+    background-color: #fff;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.number1, .number2, .number3{
+    width: 24px;
+    background-color: #48381A;
+    border-radius: 50%;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-family: 'ChosunCentennial';
+}
+.text2{
+    padding-top: 7px;
+}
+.event_ikon_box img{
+    border-bottom: 2px solid #C8C8C8;
+    width: 120px;
+}
+.ikon_box2 img{
+    padding: 23px 10px;
+}
+.ikon_box3 .text1{
+    padding-top: 10px;
+}
+.ikon_box3 img{
+    padding: 13px 10px;
+}
+.ikon_box2 .text1{
+    padding-top: 10px;
+}
+.event_text_box{
+    margin-top: 30px;
+    font-size: 15px;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-top: 40px;
+}
+.text1{
+    color: #949494;
+    font-size: 13px;
+}
+.text3{
+    color: #949494;
+    font-size: 13px;
+    padding-top: 20px;
+}
+.event_right_box{
+    float: right;
+    width: 439px;
+    height: 646px;
+    background-color: #9DAD85;
+    margin: -26px 130px 0 0;
+    font-family: 'Nanum Gothic', sans-serif;
+    position: relative;
+}
+.event_right_box:hover{
+    background-color: #AD9A85;
+}
+.event_main_img{
+   margin: 30px auto 0;
+   width: 373px;
+}
+.name_box{
+    margin-left: 35px;
+}
+.cleansing_soap_name{
+    color: #fff;
+    font-size: 23px;
+}
+.soap_price{
+    color: #E5E4E4;
+    font-size: 17px;
+    padding: 10px 0 30px; 
+}
+.soap_price span{
+    font-size: 13px;
+    text-decoration: line-through;
+}
+.new_text{
+    margin-top: 10px;
+}
+.sale_ikon{
+    background-color: #EFE9DD;
+    width: 158px;
+    height: 158px;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 541px;
+    right: 331px;
+}
+.sale_text{
+    font-size: 24px;
+    padding: 45px 0 0 40px;
+}
+.sale_text strong{
+    font-size: 38px;
+    line-height: 50px;
+}
+
+
+/*event_tablet*/
+@media (min-width:700px) and (max-width:1320px) {
+    #event_wrap{
+        height: 789px;
+        background: none;
+        margin-bottom: 115px;
+    }
+    .event_box{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .event_left_box{
+        float: none;
+        width: 276px;
+        height: 470px;
+        margin: 0 auto;
+    }
+    .sub_title{
+        font-size: 28px;
+    }
+    .event{
+        font-size: 58px;
+        padding: 27px 0 38px;
+    }
+    .event_date{
+        font-size: 13px;
+    }
+    .title_wrap{
+       width: 286px;
+       margin: 0 auto 20px;
+    }
+    .event_ikon_wrap{
+        width: 276px;
+        margin: 0 auto ;
+    }
+    .event_ikon_box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .event_ikon_box li{
+       
+    }
+    .event_ikon_box li p{
+        float: left;
+    }
+    /*ikon_box1*/
+    .ikon_box1 img{
+        width: 100%;
+        padding: 10px 10px 0 29px;
+    }
+    .ikon_box1 h1{
+        width: 72px;
+        float: left;
+    }
+    .ikon_box1 div{
+        width: 132px;
+        float: right;
+    }
+    .number1{
+        margin-top: 40px;
+    }
+    /*ikon_box2*/
+    .ikon_box2 img{
+        width: 100%;
+        padding: 27px 10px 23px 26px;
+    }
+    .ikon_box2 h1{
+        width: 72px;
+        float: left;
+    }
+    .ikon_box2 div{
+        width: 132px;
+        float: right;
+    }
+    .number2{
+        margin-top: 37px;
+    }
+    .text3{
+        padding-top: 21px;
+    }
+    /*ikon_box3*/
+    .ikon_box3 img{
+        width: 100%;
+        padding: 23px 10px 23px 22px;
+    }
+    .ikon_box3 h1{
+        width: 72px;
+        float: left;
+    }
+    .ikon_box3 div{
+        width: 132px;
+        float: right;
+    }
+    .number3{
+        margin-top: 40px;
+    }
+    
+    .ikon_box1, .ikon_box2, .ikon_box3{
+        width: 286px;
+        height: 90px;
+        margin-left: 0;
+        border-radius: none;
+    }
+    .event_ikon_box div{
+        padding-left: 30px;
+    }
+    .event_ikon_box img{
+        border-bottom: none;
+    }
+    .ikon_box1 .text1{
+        padding-top: 3px;
+    }
+    .event_text_box{
+        display: none;
+    }
+
+    .text4{
+        padding-top: 4px;
+    }
+    .text3{
+        padding-top: 19px;
+    }
+    .event_right_box{
+        float: none;
+        width: 276px;
+        height: 374px;
+        background: url(../git_img/main/mobile/5_event/event_m_img.png) no-repeat top;
+        margin: 0 auto;
+        position: relative;
+    }
+    .event_right_box:hover{
+        background: url(../git_img/main/mobile/5_event/event_m_img2.png) no-repeat top;
+    }
+    .event_main_img{
+      display: none;
+    }
+    .name_box{
+        margin-left: 20px;
+        position: absolute;
+        top: 289px;
+        left: 10px;
+    }
+    .cleansing_soap_name{
+        font-size: 13px;
+    }
+    .soap_price{
+        color: #E5E4E4;
+        font-size: 13px;
+        padding: 0; 
+    }
+    .soap_price span{
+        font-size: 7px;
+    }
+    .new_text{
+        margin-top: 10px;
+    }
+    .sale_ikon{
+        width: 71px;
+        height: 72px;
+        position: absolute;
+        bottom: 321px;
+        right: 201px;
+    }
+    .sale_text{
+        font-size: 10px;
+        padding: 11px 0px 0 3px;
+        text-align: center;
+    }
+    .sale_text strong{
+        font-size: 16px;
+        line-height: 0px;
+    }
+}
+
+/*event_mobile*/
+@media (max-width:699px) {
+    #event_wrap{
+        height: 789px;
+        background: none;
+        margin-bottom: 115px;
+    }
+    .event_box{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .event_left_box{
+        float: none;
+        width: 276px;
+        height: 470px;
+        margin: 0 auto;
+    }
+    .sub_title{
+        font-size: 28px;
+    }
+    .event{
+        font-size: 58px;
+        padding: 27px 0 38px;
+    }
+    .event_date{
+        font-size: 13px;
+    }
+    .title_wrap{
+       width: 286px;
+       margin: 0 auto 20px;
+    }
+    .event_ikon_wrap{
+        width: 276px;
+        margin: 0 auto ;
+    }
+    .event_ikon_box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .event_ikon_box li{
+       
+    }
+    .event_ikon_box li p{
+        float: left;
+    }
+    /*ikon_box1*/
+    .ikon_box1 img{
+        width: 100%;
+        padding: 10px 10px 0 29px;
+    }
+    .ikon_box1 h1{
+        width: 72px;
+        float: left;
+    }
+    .ikon_box1 div{
+        width: 132px;
+        float: right;
+    }
+    .number1{
+        margin-top: 40px;
+    }
+    /*ikon_box2*/
+    .ikon_box2 img{
+        width: 100%;
+        padding: 27px 10px 23px 26px;
+    }
+    .ikon_box2 h1{
+        width: 72px;
+        float: left;
+    }
+    .ikon_box2 div{
+        width: 132px;
+        float: right;
+    }
+    .number2{
+        margin-top: 37px;
+    }
+    .text3{
+        padding-top: 21px;
+    }
+    /*ikon_box3*/
+    .ikon_box3 img{
+        width: 100%;
+        padding: 23px 10px 23px 22px;
+    }
+    .ikon_box3 h1{
+        width: 72px;
+        float: left;
+    }
+    .ikon_box3 div{
+        width: 132px;
+        float: right;
+    }
+    .number3{
+        margin-top: 40px;
+    }
+    
+    .ikon_box1, .ikon_box2, .ikon_box3{
+        width: 286px;
+        height: 90px;
+        margin-left: 0;
+        border-radius: none;
+    }
+    .event_ikon_box div{
+        padding-left: 30px;
+    }
+    .event_ikon_box img{
+        border-bottom: none;
+    }
+    .ikon_box1 .text1{
+        padding-top: 3px;
+    }
+    .event_text_box{
+        display: none;
+    }
+
+    .text4{
+        padding-top: 4px;
+    }
+    .text3{
+        padding-top: 19px;
+    }
+    .event_right_box{
+        float: none;
+        width: 276px;
+        height: 374px;
+        background: url(../git_img/main/mobile/5_event/event_m_img.png) no-repeat top;
+        margin: 0 auto;
+        position: relative;
+    }
+    .event_right_box:hover{
+        background: url(../git_img/main/mobile/5_event/event_m_img2.png) no-repeat top;
+    }
+    .event_main_img{
+      display: none;
+    }
+    .name_box{
+        margin-left: 20px;
+        position: absolute;
+        top: 289px;
+        left: 10px;
+    }
+    .cleansing_soap_name{
+        font-size: 13px;
+    }
+    .soap_price{
+        color: #E5E4E4;
+        font-size: 13px;
+        padding: 0; 
+    }
+    .soap_price span{
+        font-size: 7px;
+    }
+    .new_text{
+        margin-top: 10px;
+    }
+    .sale_ikon{
+        width: 71px;
+        height: 72px;
+        position: absolute;
+        bottom: 321px;
+        right: 201px;
+    }
+    .sale_text{
+        font-size: 10px;
+        padding: 11px 0px 0 3px;
+        text-align: center;
+    }
+    .sale_text strong{
+        font-size: 16px;
+        line-height: 0px;
+    }
+}
+
+/*review_web*/
+#review_wrap{
+    background-color: #E6EDE1;
+    height: 503px;
+}
+.review{
+    width: 100%;
+    margin: 0 auto;
+}
+.review_text{
+    width: 594px;
+    float: left;
+    margin: 140px 0 0 400px;
+}
+.review_text h1{
+    font-family: 'ChosunCentennial';
+    font-size: 60px;
+}
+.review_text p{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 19px;
+    font-weight: 100;
+    margin-top: 100px;
+    line-height: 33px;
+}
+.review_illustrator{
+    width: 463px;
+    float: right;
+    margin: 20px 400px 0 0;
+}
+.review_insta {
+    width: 1280px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+.review_insta_img{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 1280px;
+    justify-content: space-between;
+}
+.review_insta_img li{ 
+    width: 24%;
+}
+.review_insta_img li img{
+    width: 100%;
+}
+
+/*review_tablet*/
+@media (min-width:700px) and (max-width:1320px) {
+    #review_wrap{
+        background-color: #E6EDE1;
+        height: 419px;
+        width: 390px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .review{
+        width: 100%;
+    }
+    .review_text{
+        width: 370px;
+        float: none;
+        margin: 0 auto;
+    }
+    .review_text h1{
+        font-size: 30px;
+        padding-top: 26px;
+    }
+    .review_text p{
+        font-size: 12px;
+        margin: 0;
+        padding-top: 50px;
+        line-height: 30px;
+    }
+    .review_illustrator{
+        width: 400px;
+        float: none;
+        margin: 0 ;
+        padding-top: 15px;
+    }
+    .review_illustrator img{
+        width: 50%;
+    }
+    .review_insta {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 44px;
+    }
+    .review_insta_img{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 370px;
+    }
+    .review_insta_img li{
+        width: 50%;
+    }
+    .review_insta_img li img{
+        width: 100%;
+    }
+    }
+
+/*review_mobile*/
+@media (max-width:699px) {
+#review_wrap{
+    background-color: #E6EDE1;
+    height: 419px;
+    width: 390px;
+    margin: 0 auto;
+    text-align: center;
+}
+.review{
+    width: 100%;
+}
+.review_text{
+    width: 370px;
+    float: none;
+    margin: 0 auto;
+}
+.review_text h1{
+    font-size: 30px;
+    padding-top: 26px;
+}
+.review_text p{
+    font-size: 12px;
+    margin: 0;
+    padding-top: 50px;
+    line-height: 30px;
+}
+.review_illustrator{
+    width: 400px;
+    float: none;
+    margin: 0 ;
+    padding-top: 15px;
+}
+.review_illustrator img{
+    width: 50%;
+}
+.review_insta {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 44px;
+}
+.review_insta_img{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 370px;
+}
+.review_insta_img li{
+    width: 50%;
+}
+.review_insta_img li img{
+    width: 100%;
+}
+}
+
+/*footer_web*/
+#footer_wrap{
+    background-color: #F2F6F1;
+    height: 369px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 100;
+    margin-top: 230px;
+}
+.footer{
+    padding-left: 300px;
+}
+.footer_logo{
+    padding: 50px 0 10px;
+}
+.footer_sns_ikon{
+    padding-bottom: 50px;
+}
+.footer_text li{
+    line-height: 30px;
+}
+.footer_text li span{
+    padding-left: 30px;
+}
+
+/*footer_tablet*/
+@media (min-width:700px) and (max-width:1320px) {
+    #footer_wrap{
+        background-color: #F2F6F1;
+        height: 390px;
+        margin: 80px auto 0;
+        text-align: center;
+    }
+    .footer{
+        padding-left: 0;
+        font-size: 13px;
+    }
+    .footer_logo{
+        padding: 35px 0 22px;
+    }
+    .footer_sns_ikon{
+        padding-bottom: 50px;
+    }
+    .footer_text li{
+        line-height: 30px;
+    }
+    .footer_text li span{
+        padding-left: 30px;
+    }
+    }
+
+/*footer_mobile*/
+@media (max-width:699px) {
+#footer_wrap{
+    background-color: #F2F6F1;
+    height: 390px;
+    margin: 80px auto 0;
+    text-align: center;
+}
+.footer{
+    padding-left: 0;
+    font-size: 13px;
+}
+.footer_logo{
+    padding: 35px 0 22px;
+}
+.footer_sns_ikon{
+    padding-bottom: 50px;
+}
+.footer_text li{
+    line-height: 30px;
+}
+.footer_text li span{
+    padding-left: 30px;
+}
+}
